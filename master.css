@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    text-align: center;
+}
+
+.head {
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.head p {
+    color: hsl(212, 6%, 44%);
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+
+.cards div {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.cards h3 {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+
+.cards p {
+    color: hsl(212, 6%, 44%);
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cards img {
+    display: block;
+    margin-left: auto;
+}
+
+.left {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.top {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bottom {
+    border-top: 4px solid hsl(34, 97%, 64%);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.right {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
